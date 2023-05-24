@@ -1,0 +1,208 @@
+$ python ./amd_smram_parser.py smram_dump_complete.bin  0xCE000000 0xCEFFFFFF dell-inspiron15-amd.bin 
+[+] Copying "dell-inspiron15-amd.bin" to "fw_image_1678404016"...
+[+] Unpacking "fw_image_1678404016"...
+
+parseVolumeHeader: unaligned volume
+parseRawArea: one of volumes inside overlaps the end of data
+parseRawArea: one of volumes inside overlaps the end of data
+parse: not a single Volume Top File is found, the image may be corrupted
+
+
+LOADED SMM DRIVERS:
+
+0xce941000: size = 0x00007000, ep = 0xce9421fc, name = CompalEcSmm
+0xce94a000: size = 0x00006000, ep = 0xce94b1e0, name = CompalCMFCCommonSwSmi
+0xce951000: size = 0x00008000, ep = 0xce9521ec, name = CompalCommonHookSmm
+0xce95a000: size = 0x00016000, ep = 0xce95b16c, name = HddPassword
+0xce971000: size = 0x00006000, ep = 0xce9720ac, name = SysPassword
+0xce978000: size = 0x00013000, ep = 0xce979114, name = IdeBusDxe
+0xce98c000: size = 0x00006000, ep = 0xce98d23c, name = D01UsttCallback
+0xce994000: size = 0x00011000, ep = 0xce99512c, name = SMBIOSTypeDAhCallingInterfaceSmm
+0xce9a6000: size = 0x00007000, ep = 0xce9a722c, name = ServiceBodySmm
+0xce9ae000: size = 0x00007000, ep = 0xce9af320, name = AmdCcxZen3Smm
+0xce9b6000: size = 0x0000a000, ep = 0xce9b7340, name = CompalEepromSmm
+0xce9c2000: size = 0x00007000, ep = 0xce9c321c, name = DiagnosticTestBIOSInterfaceSmm
+0xce9ca000: size = 0x00008000, ep = 0xce9cb22c, name = ODMDiagnosticTestSmm
+0xce9d4000: size = 0x0000a000, ep = 0xce9d523c, name = 
+0xce9df000: size = 0x00008000, ep = 0xce9e0350, name = fTPMTcg2Smm
+0xce9e8000: size = 0x00006000, ep = 0xce9e9220, name = SpiLockSmi
+0xce9f0000: size = 0x00007000, ep = 0xce9f1290, name = SmmPlatform
+0xce9f8000: size = 0x00007000, ep = 0xce9f9230, name = CommonSmiCallBackSmm
+0xcea00000: size = 0x00006000, ep = 0xcea0121c, name = AcpiCallbacksSmm
+0xcea07000: size = 0x00005000, ep = 0xcea08094, name = UsbCbiDxe
+0xcea0d000: size = 0x00005000, ep = 0xcea0e060, name = UsbBotDxe
+0xcea13000: size = 0x0000c000, ep = 0xcea14060, name = UsbBusDxe
+0xcea44000: size = 0x00009000, ep = 0xcea450fc, name = FaultTolerantWriteLiteDxe
+0xcea4e000: size = 0x0000a000, ep = 0xcea4f320, name = AmdPspSmmV2
+0xcea59000: size = 0x00005000, ep = 0xcea5a1bc, name = AmdCpmOemSmm
+0xcea5f000: size = 0x000080a0, ep = 0xcea5fb70, name = 
+0xcea68000: size = 0x00008000, ep = 0xcea69360, name = IhisiSmm
+0xcea71000: size = 0x00008000, ep = 0xcea7208c, name = ExtendODMSmm
+0xcea7a000: size = 0x00010000, ep = 0xcea7b134, name = NvmExpressDxe
+0xcea8b000: size = 0x00014000, ep = 0xcea8c0e4, name = 
+0xceaa7000: size = 0x00005000, ep = 0xceaa8080, name = AspmOverrideDxe
+0xceaad000: size = 0x0000b000, ep = 0xceaae1c0, name = PnpSmm
+0xceab9000: size = 0x0000b000, ep = 0xceaba1e0, name = FvbServicesRuntimeDxe
+0xceae5000: size = 0x0000d000, ep = 0xceae609c, name = UsbCoreDxe
+0xceaf4000: size = 0x00008000, ep = 0xceaf5310, name = AmdSmmCommunication
+0xceafd000: size = 0x00008000, ep = 0xceafe320, name = FchSHSataD3ColdSmm
+0xceb07000: size = 0x0000e000, ep = 0xceb08340, name = FchShastaSmmInit
+0xceb18000: size = 0x0000d000, ep = 0xceb19320, name = AmdPspP2CmboxV2
+0xceb26000: size = 0x00005000, ep = 0xceb271e0, name = StatusCodeHandlerSmm
+0xceb2d000: size = 0x00008000, ep = 0xceb2e210, name = AodSmmSsp
+0xceb36000: size = 0x00005000, ep = 0xceb371bc, name = AmdCpmOemSmm
+0xceb3c000: size = 0x00009000, ep = 0xceb3d230, name = AmdCpmDisplayFeatureSmm
+0xceb4a000: size = 0x00014000, ep = 0xceb4b3c0, name = IhisiServicesSmm
+0xceb5f000: size = 0x00005000, ep = 0xceb60268, name = PiSmmCommunicationSmm
+0xceb91000: size = 0x00011000, ep = 0xceb92330, name = AmdApcbSmmV3
+0xceba5000: size = 0x0000b000, ep = 0xceba6360, name = FchSmmDispatcher
+0xcebb1000: size = 0x00008000, ep = 0xcebb2310, name = AmdSmmCommunication
+0xcebba000: size = 0x00007000, ep = 0xcebbb290, name = FirmwarePerformanceSmm
+0xcebc2000: size = 0x00005000, ep = 0xcebc31e0, name = StatusCodeHandlerSmm
+0xcebc9000: size = 0x0000f000, ep = 0xcebca260, name = D01HddPassword
+0xcebd9000: size = 0x00005000, ep = 0xcebda0b4, name = ODMShareMemProtocol
+0xcebdf000: size = 0x00005000, ep = 0xcebe0060, name = UsbBotDxe
+0xcebe5000: size = 0x00007000, ep = 0xcebe6190, name = fTPMTisDxe
+0xcebed000: size = 0x0000d000, ep = 0xcebee05c, name = EhciDxe
+0xcebfc000: size = 0x00005000, ep = 0xcebfd060, name = UsbBotDxe
+0xcec02000: size = 0x0000a000, ep = 0xcec030d4, name = StorageSecurityCommandDxe
+0xcec0f000: size = 0x0000a000, ep = 0xcec101c0, name = FlashDeviceFvbRuntimeDxe
+0xcec1a000: size = 0x00009000, ep = 0xcec1b060, name = UsbMouseDxe
+0xcec24000: size = 0x0000b000, ep = 0xcec25060, name = UsbKbDxe
+0xcec30000: size = 0x0000f000, ep = 0xcec31098, name = XhciDxe
+0xcec41000: size = 0x00008000, ep = 0xcec42310, name = AmdSmmCommunication
+0xcec4a000: size = 0x00007000, ep = 0xcec4b310, name = AmdFabricRnSmm
+0xcec5e000: size = 0x00006000, ep = 0xcec5f310, name = AmdPspP2CmboxV2SmmBuffer
+0xcec65000: size = 0x00007000, ep = 0xcec661fc, name = CompalEcSmm
+0xcec6e000: size = 0x00005000, ep = 0xcec6f1e0, name = StatusCodeHandlerSmm
+0xcec74000: size = 0x00008000, ep = 0xcec7524c, name = D01IhisiSmm
+0xcec7d000: size = 0x00005000, ep = 0xcec7e220, name = SecureFlashEspFlagSmm
+0xcec83000: size = 0x00005000, ep = 0xcec841e0, name = StatusCodeHandlerSmm
+0xcec8a000: size = 0x00006000, ep = 0xcec8b240, name = ChipsetSvcSmm
+0xcec91000: size = 0x0000b000, ep = 0xcec921c0, name = PnpSmm
+0xcec9d000: size = 0x00009000, ep = 0xcec9e1bc, name = TianoCompressSmm
+0xceca8000: size = 0x00006000, ep = 0xceca9230, name = ReportStatusCodeRouterSmm
+0xcef62000: size = 0x00012000, ep = 0xcef64180, name = PiSmmCpuDxeSmm
+0xcef75000: size = 0x00006000, ep = 0xcef761bc, name = CpuIo2Smm
+0xcef7c000: size = 0x00007000, ep = 0xcef7d274, name = SmmLockBox
+0xcef87000: size = 0x00016000, ep = 0xcef881b4, name = VariableRuntimeDxe
+0xcef9f000: size = 0x00005000, ep = 0xcefa00b0, name = DxeSmmIoLibSmm
+0xcefa5000: size = 0x00031000, ep = 0xcefa60e0, name = CryptoServiceRuntimeDxe
+0xcefd8000: size = 0x00009000, ep = 0xcefd90b4, name = PcdSmmDxe
+0xceff2000: size = 0x0000d000, ep = 0xceff3138, name = PiSmmCore
+
+Registered SMI Handlers:
+
+9C28BE0C-EE32-43D8-A223E7C1614EF7CA
+ - SMIH - Handler at ce95efa4 - [HddPassword]
+54C03D2D-5903-4DFB-88B7FA7636BE03D1
+ - SMIH - Handler at ce97a6b4 - [IdeBusDxe]
+4953EA2E-3583-40B8-B2533473A0EB513C
+ - SMIH - Handler at ce9e99d4 - [SpiLockSmi]
+BCE91A08-BCE6-40E3-89E0547FD52191AE
+ - SMIH - Handler at cea7d82c - [NvmExpressDxe]
+52C78312-8EDC-4233-98F21A1AA5E388A5
+ - SMIH - Handler at cea7d8e4 - [NvmExpressDxe]
+56947330-585C-4470-A95DC55C529FEB47
+ - SMIH - Handler at cea8d724 - []
+E7C41ABF-1E0C-4AA1-BA2D274D0EB1E258
+ - SMIH - Handler at cea8dc24 - []
+3A9DB872-7A03-4B99-A9CDB853012DBD5C
+ - SMIH - Handler at ceab0864 - [PnpSmm]
+EFI_FIRMWARE_PERFORMANCE_GUID
+ - SMIH - Handler at cebbba98 - [FirmwarePerformanceSmm]
+4B52E4DA-60EB-4EC2-A80CF9FD0AB85E97
+ - SMIH - Handler at cebfd5fc - [UsbBotDxe]
+EFI_ATA_PASS_THRU_PROTOCOL_GUID
+ - SMIH - Handler at cec050f0 - [StorageSecurityCommandDxe]
+2970687C-618C-4DE5-B8F96C7576DCA83D
+ - SMIH - Handler at cec10a2c - [FlashDeviceFvbRuntimeDxe]
+EFI_SMM_LOCK_BOX_COMMUNICATION_GUID
+ - SMIH - Handler at cef7d9fc - [SmmLockBox]
+EDKII_SMM_END_OF_S3_RESUME_PROTOCOL_GUID
+ - SMIH - Handler at ceff3e94 - [PiSmmCore]
+EDKII_S3_SMM_INIT_DONE_GUID
+ - SMIH - Handler at ceff3d48 - [PiSmmCore]
+00000000-0000-0000-0000000000000000
+ - SMIH - Handler at ceba6cf4 - [FchSmmDispatcher]
+
+Registered (FCH) SW SMI Handlers:
+
+FchSwSmiRecord at 0092ce98 - 03 - handler: ceff390c [PiSmmCore]
+FchSwSmiRecord at 0092cf18 - 03 - handler: ce964354 [HddPassword]
+FchSwSmiRecord at 0092cf98 - 03 - handler: ce9b8308 [CompalEepromSmm]
+FchSwSmiRecord at 0092d818 - 03 - handler: ce9d7c84 []
+FchSwSmiRecord at 0092d898 - 03 - handler: cea50f94 [AmdPspSmmV2]
+FchSwSmiRecord at 0092d918 - 03 - handler: cea6a35c [IhisiSmm]
+FchSwSmiRecord at 0092d998 - 03 - handler: cea83384 [NvmExpressDxe]
+FchSwSmiRecord at 0092da18 - 03 - handler: cea98604 []
+FchSwSmiRecord at 0092da98 - 03 - handler: ceaf5c14 [AmdSmmCommunication]
+FchSwSmiRecord at 0092db18 - 03 - handler: ceafee60 [FchSHSataD3ColdSmm]
+FchSwSmiRecord at 0092db98 - 03 - handler: ceb0a118 [FchShastaSmmInit]
+FchSwSmiRecord at 0092f498 - 03 - handler: ceb1b37c [AmdPspP2CmboxV2]
+FchSwSmiRecord at 0092f518 - 03 - handler: ceb40468 [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 0092f598 - 03 - handler: ceb52820 [IhisiServicesSmm]
+FchSwSmiRecord at 0092f618 - 03 - handler: ceb93ce0 [AmdApcbSmmV3]
+FchSwSmiRecord at 0092f698 - 03 - handler: ceba9788 [FchSmmDispatcher]
+FchSwSmiRecord at 0092f718 - 03 - handler: cebb2e00 [AmdSmmCommunication]
+FchSwSmiRecord at 0093b418 - 03 - handler: cebbbf94 [FirmwarePerformanceSmm]
+FchSwSmiRecord at 0093b498 - 03 - handler: cebcd9ac [D01HddPassword]
+FchSwSmiRecord at 0093b518 - 03 - handler: cec4336c [AmdSmmCommunication]
+FchSwSmiRecord at 0093b598 - 03 - handler: cef7de0c [SmmLockBox]
+FchSwSmiRecord at 0093b618 - 03 - handler: cef96ed0 [VariableRuntimeDxe]
+FchSwSmiRecord at 00949c18 - cf - handler: ce9425c4 [CompalEcSmm]
+FchSwSmiRecord at 00949e18 - ce - handler: ce94b638 [CompalCMFCCommonSwSmi]
+FchSwSmiRecord at 00993d98 - cc - handler: ce98d788 [D01UsttCallback]
+FchSwSmiRecord at 00993f98 - c6 - handler: ce996944 [SMBIOSTypeDAhCallingInterfaceSmm]
+FchSwSmiRecord at 009c1018 - c8 - handler: ce9958ac [SMBIOSTypeDAhCallingInterfaceSmm]
+FchSwSmiRecord at 009c1098 - 91 - handler: ce9958ac [SMBIOSTypeDAhCallingInterfaceSmm]
+FchSwSmiRecord at 009c1798 - 03 - handler: ce9afae4 [AmdCcxZen3Smm]
+FchSwSmiRecord at 009c1818 - ea - handler: ce9af9f8 [AmdCcxZen3Smm]
+FchSwSmiRecord at 009c1898 - ee - handler: ce9af720 [AmdCcxZen3Smm]
+FchSwSmiRecord at 009c1f18 - a9 - handler: ce9c3904 [DiagnosticTestBIOSInterfaceSmm]
+FchSwSmiRecord at 009c1f98 - a3 - handler: ce9c3dd8 [DiagnosticTestBIOSInterfaceSmm]
+FchSwSmiRecord at 009ef118 - 48 - handler: ce9e09f0 [fTPMTcg2Smm]
+FchSwSmiRecord at 009ef198 - 50 - handler: ce9e091c [fTPMTcg2Smm]
+FchSwSmiRecord at 009ef518 - e8 - handler: ce9e99ac [SpiLockSmi]
+FchSwSmiRecord at 009ef598 - e7 - handler: ce9e99b8 [SpiLockSmi]
+FchSwSmiRecord at 009efc98 - fb - handler: ce9f1dfc [SmmPlatform]
+FchSwSmiRecord at 009efd18 - 05 - handler: ce9f1dec [SmmPlatform]
+FchSwSmiRecord at 009efd98 - 05 - handler: ce9f1ddc [SmmPlatform]
+FchSwSmiRecord at 009efe18 - 05 - handler: ce9f1c50 [SmmPlatform]
+FchSwSmiRecord at 009efe98 - 05 - handler: ce9f1bc4 [SmmPlatform]
+FchSwSmiRecord at 009eff18 - 04 - handler: ce9f1b0c [SmmPlatform]
+FchSwSmiRecord at 009eff98 - 03 - handler: ce9f1a84 [SmmPlatform]
+FchSwSmiRecord at 00aa0198 - c9 - handler: cea73120 [ExtendODMSmm]
+FchSwSmiRecord at 00aa0518 - 03 - handler: cea7dc58 [NvmExpressDxe]
+FchSwSmiRecord at 00aa0c98 - 03 - handler: cea8dc18 []
+FchSwSmiRecord at 00aa1718 - 04 - handler: ce9f98e4 [CommonSmiCallBackSmm]
+FchSwSmiRecord at 00aa1918 - e3 - handler: cea018a8 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00aa1998 - a1 - handler: cea017f8 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00aa1a18 - a0 - handler: cea01734 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00aa2298 - ec - handler: cef8e4bc [VariableRuntimeDxe]
+FchSwSmiRecord at 00aa2b98 - dd - handler: cea4f9d8 [AmdPspSmmV2]
+FchSwSmiRecord at 00aa2d98 - 03 - handler: cea4f9a0 [AmdPspSmmV2]
+FchSwSmiRecord at 00aa6298 - 9e - handler: cea5a55c [AmdCpmOemSmm]
+FchSwSmiRecord at 00aa6398 - 05 - handler: cea5a93c [AmdCpmOemSmm]
+FchSwSmiRecord at 00aa6418 - 04 - handler: cea5a93c [AmdCpmOemSmm]
+FchSwSmiRecord at 00aa6498 - 03 - handler: cea5a894 [AmdCpmOemSmm]
+FchSwSmiRecord at 00af3118 - 73 - handler: ceaa86f8 [AspmOverrideDxe]
+FchSwSmiRecord at 00af3798 - 47 - handler: ceab0634 [PnpSmm]
+FchSwSmiRecord at 00af3a18 - 16 - handler: ceabbbd0 [FvbServicesRuntimeDxe]
+FchSwSmiRecord at 00af3d18 - fd - handler: ceae6fa8 [UsbCoreDxe]
+FchSwSmiRecord at 00b06998 - 05 - handler: ceb095e4 [FchShastaSmmInit]
+FchSwSmiRecord at 00b06a18 - 04 - handler: ceb0958c [FchShastaSmmInit]
+FchSwSmiRecord at 00b06a98 - 03 - handler: ceb094d4 [FchShastaSmmInit]
+FchSwSmiRecord at 00b06c98 - d2 - handler: ceb097a4 [FchShastaSmmInit]
+FchSwSmiRecord at 00b06d18 - a1 - handler: ceb09b04 [FchShastaSmmInit]
+FchSwSmiRecord at 00b06d98 - a0 - handler: ceb098bc [FchShastaSmmInit]
+FchSwSmiRecord at 00b06e18 - eb - handler: ceb09860 [FchShastaSmmInit]
+FchSwSmiRecord at 00b06e98 - ea - handler: ceb097ac [FchShastaSmmInit]
+FchSwSmiRecord at 00b2cc98 - 67 - handler: ceb27538 [StatusCodeHandlerSmm]
+FchSwSmiRecord at 00b2ce98 - 9d - handler: ceb2ec9c [AodSmmSsp]
+FchSwSmiRecord at 00b46118 - e3 - handler: ceb37880 [AmdCpmOemSmm]
+FchSwSmiRecord at 00b46298 - ed - handler: ceb3f9a0 [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 00b46318 - e3 - handler: ceb3f88c [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 00b46f98 - ef - handler: ceb51d48 [IhisiServicesSmm]
+FchSwSmiRecord at 00b90318 - 01 - handler: ceb606bc [PiSmmCommunicationSmm]
+FchSwSmiRecord at 00ff0998 - 17 - handler: cefdbe08 [PcdSmmDxe]

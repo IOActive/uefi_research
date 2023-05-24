@@ -1,0 +1,180 @@
+$ python amd_smram_parser.py acer_secure_core_smram.bin 0x7B000000 0x7BFFFFFF bios-1.08.bin
+[+] Copying "bios-1.08.bin" to "fw_image_1684905637"...
+[+] Unpacking "fw_image_1684905637"...
+
+findNextVolume: volume candidate at offset 1B21FFEh skipped, has invalid Reserved byte value 01h
+parseVolumeHeader: unaligned volume
+parseRawArea: one of volumes inside overlaps the end of data
+parseRawArea: one of volumes inside overlaps the end of data
+parse: not a single Volume Top File is found, the image may be corrupted
+
+
+LOADED SMM DRIVERS:
+
+0x7b402000: size = 0x00010000, ep = 0x7b403284, name = A01WMISmmCallback
+0x7b414000: size = 0x00005000, ep = 0x7b4151dc, name = A01BootDeviceServiceSmm
+0x7b41b000: size = 0x0000b000, ep = 0x7b41c388, name = IhisiRegister
+0x7b427000: size = 0x00005000, ep = 0x7b428204, name = AcerBIOSConfigurationToolSmm
+0x7b42e000: size = 0x00005000, ep = 0x7b42f214, name = SmmSvcCallback
+0x7b480000: size = 0x00007000, ep = 0x7b4811e0, name = A01SmmServiceBody
+0x7b488000: size = 0x00006000, ep = 0x7b4891dc, name = A01SysPasswordSmm
+0x7b490000: size = 0x00019000, ep = 0x7b49118c, name = HddPassword
+0x7b4ab000: size = 0x00006000, ep = 0x7b4ac20c, name = A01DataServiceBodySmm
+0x7b4b3000: size = 0x00006000, ep = 0x7b4b40a4, name = SysPassword
+0x7b4bb000: size = 0x0000b000, ep = 0x7b4bc2fc, name = AodSmm
+0x7b4c7000: size = 0x00007000, ep = 0x7b4c831c, name = AmdCcxZen3Smm
+0x7b4cf000: size = 0x0000c000, ep = 0x7b4d0388, name = IhisiSmm
+0x7b4dd000: size = 0x0000a000, ep = 0x7b4de380, name = AmdPspSmmV2
+0x7b4e9000: size = 0x00007000, ep = 0x7b4ea2a0, name = SmmPlatform
+0x7b4f4000: size = 0x00013000, ep = 0x7b4f53a8, name = IhisiServicesSmm
+0x7b508000: size = 0x00007000, ep = 0x7b509224, name = CommonSmiCallBackSmm
+0x7b510000: size = 0x00006000, ep = 0x7b511220, name = AcpiCallbacksSmm
+0x7b518000: size = 0x00008000, ep = 0x7b5192cc, name = Tcg2Smm
+0x7b521000: size = 0x00006000, ep = 0x7b522094, name = AcerDeviceEnabling
+0x7b528000: size = 0x00005000, ep = 0x7b529094, name = UsbCbiDxe
+0x7b52e000: size = 0x00005000, ep = 0x7b52f060, name = DxeSHIStatusCodeHandler
+0x7b534000: size = 0x0000c000, ep = 0x7b535074, name = UsbBusDxe
+0x7b566000: size = 0x00008000, ep = 0x7b5670f4, name = FaultTolerantWriteLiteDxe
+0x7b56f000: size = 0x00008ee0, ep = 0x7b56fbf0, name = BootScriptExecutorDxe
+0x7b57b000: size = 0x00006000, ep = 0x7b57c094, name = AcerDeviceEnabling
+0x7b582000: size = 0x0000a000, ep = 0x7b583228, name = PnpSmm
+0x7b58e000: size = 0x0000a000, ep = 0x7b58f208, name = FvbServicesRuntimeDxe
+0x7b5b9000: size = 0x0000d000, ep = 0x7b5ba0ac, name = UsbCoreDxe
+0x7b5c7000: size = 0x00011000, ep = 0x7b5c8154, name = NvmExpressDxe
+0x7b5da000: size = 0x00014000, ep = 0x7b5db0e4, name = AhciBusDxe
+0x7b5ef000: size = 0x00009000, ep = 0x7b5f035c, name = BctBaseSmmRMB
+0x7b5f9000: size = 0x00009000, ep = 0x7b5fa30c, name = FchKTSataD3ColdSmm
+0x7b604000: size = 0x0000e000, ep = 0x7b605374, name = FchKeithSmmInit
+0x7b613000: size = 0x00007000, ep = 0x7b6142fc, name = AmdCpmOemSmm
+0x7b61c000: size = 0x00007000, ep = 0x7b61d2fc, name = AmdCpmOemSmm
+0x7b624000: size = 0x00009000, ep = 0x7b6252fc, name = AmdCpmDisplayFeatureSmm
+0x7b62e000: size = 0x00005000, ep = 0x7b62f268, name = PiSmmCommunicationSmm
+0x7b634000: size = 0x00000000, ep = 0x0, name = 
+0x7b63b000: size = 0x0000b000, ep = 0x7b63c358, name = AmdPspRomArmor3Smm
+0x7b649000: size = 0x0000c000, ep = 0x7b64a334, name = FchSmmDispatcher
+0x7b677000: size = 0x00011000, ep = 0x7b678390, name = AmdApcbSmmV3
+0x7b68a000: size = 0x00009000, ep = 0x7b68b358, name = AmdPspIntrusionDetectionSmm
+0x7b9b3000: size = 0x00013000, ep = 0x7b9b5230, name = PiSmmCpuDxeSmm
+0x7b9c7000: size = 0x00005000, ep = 0x7b9c8200, name = StatusCodeHandlerSmm
+0x7b9cd000: size = 0x00005000, ep = 0x7b9ce03c, name = fTPMTisDxe
+0x7b9d3000: size = 0x00005000, ep = 0x7b9d4060, name = DxeSHIStatusCodeHandler
+0x7b9d9000: size = 0x0000b000, ep = 0x7b9da0d4, name = StorageSecurityCommandDxe
+0x7b9e6000: size = 0x00009000, ep = 0x7b9e7208, name = FwBlockServiceSmm
+0x7b9f0000: size = 0x00009000, ep = 0x7b9f1074, name = UsbMouseDxe
+0x7b9fa000: size = 0x0000c000, ep = 0x7b9fb074, name = UsbKbDxe
+0x7ba07000: size = 0x0000e000, ep = 0x7ba08060, name = XhciDxe
+0x7ba16000: size = 0x0000d000, ep = 0x7ba1705c, name = EhciDxe
+0x7ba24000: size = 0x00005000, ep = 0x7ba2507c, name = TisDxe
+0x7bed3000: size = 0x0001d000, ep = 0x7bed4ab0, name = SmmSupervisorBinRelease
+0x7bef1000: size = 0x00009000, ep = 0x7bef2300, name = AmdSmmCommunication
+0x7befc000: size = 0x00007000, ep = 0x7befd2fc, name = AmdCpmOemSmm
+
+Registered SMI Handlers:
+
+9C28BE0C-EE32-43D8-A223E7C1614EF7CA
+ - SMIH - Handler at 7b496f1c - [HddPassword]
+5ED15DC0-EDEF-4161-91516014C4CC630C
+ - SMIH - Handler at 7b4bceb0 - [AodSmm]
+EFI_SMM_VARIABLE_PROTOCOL_GUID
+ - SMIH - Handler at 7bf8afd8 - []
+3A9DB872-7A03-4B99-A9CDB853012DBD5C
+ - SMIH - Handler at 7b585780 - [PnpSmm]
+145F21AB-D92C-4EAB-AB1E5D24B90C3C6C
+ - SMIH - Handler at 7b590d88 - [FvbServicesRuntimeDxe]
+BCE91A08-BCE6-40E3-89E0547FD52191AE
+ - SMIH - Handler at 7b5cb1a4 - [NvmExpressDxe]
+52C78312-8EDC-4233-98F21A1AA5E388A5
+ - SMIH - Handler at 7b5cb280 - [NvmExpressDxe]
+56947330-585C-4470-A95DC55C529FEB47
+ - SMIH - Handler at 7b5dc56c - [AhciBusDxe]
+E7C41ABF-1E0C-4AA1-BA2D274D0EB1E258
+ - SMIH - Handler at 7b5dc860 - [AhciBusDxe]
+4B52E4DA-60EB-4EC2-A80CF9FD0AB85E97
+ - SMIH - Handler at 7b9d4648 - [DxeSHIStatusCodeHandler]
+EFI_ATA_PASS_THRU_PROTOCOL_GUID
+ - SMIH - Handler at 7b9dc3bc - [StorageSecurityCommandDxe]
+2970687C-618C-4DE5-B8F96C7576DCA83D
+ - SMIH - Handler at 7b9e79d4 - [FwBlockServiceSmm]
+
+Registered (FCH) SW SMI Handlers:
+
+FchSwSmiRecord at 003e9a18 - 03 - handler: 7bff390c []
+FchSwSmiRecord at 003e9a98 - 03 - handler: 7b41ed2c [IhisiRegister]
+FchSwSmiRecord at 003e9b18 - 03 - handler: 7b49ceb8 [HddPassword]
+FchSwSmiRecord at 003e9b98 - 03 - handler: 7b4bd660 [AodSmm]
+FchSwSmiRecord at 003e9c18 - 03 - handler: 7b4d1cc0 [IhisiSmm]
+FchSwSmiRecord at 003e9c98 - 03 - handler: 7b4e03a0 [AmdPspSmmV2]
+FchSwSmiRecord at 003e9d18 - 03 - handler: 7b4fc8a4 [IhisiServicesSmm]
+FchSwSmiRecord at 003e9d98 - 03 - handler: 7b5d0f88 [NvmExpressDxe]
+FchSwSmiRecord at 003e9e18 - 03 - handler: 7b5e70a4 [AhciBusDxe]
+FchSwSmiRecord at 003e9e98 - 03 - handler: 7b5f0d20 [BctBaseSmmRMB]
+FchSwSmiRecord at 003e9f18 - 03 - handler: 7b5faf38 [FchKTSataD3ColdSmm]
+FchSwSmiRecord at 003e9f98 - 03 - handler: 7b607e5c [FchKeithSmmInit]
+FchSwSmiRecord at 003fc498 - 03 - handler: 7b63e27c [AmdPspRomArmor3Smm]
+FchSwSmiRecord at 003fc598 - 03 - handler: 7b64decc [FchSmmDispatcher]
+FchSwSmiRecord at 003fc618 - 03 - handler: 7b67a8e8 [AmdApcbSmmV3]
+FchSwSmiRecord at 003fc698 - 03 - handler: 7b68c568 [AmdPspIntrusionDetectionSmm]
+FchSwSmiRecord at 003fc798 - 03 - handler: 7bef3c64 [AmdSmmCommunication]
+FchSwSmiRecord at 003fc818 - 03 - handler: 7bf71e38 []
+FchSwSmiRecord at 003fc898 - 03 - handler: 7bf7ae78 []
+FchSwSmiRecord at 003fc918 - 03 - handler: 7bf94180 []
+FchSwSmiRecord at 00413d98 - d0 - handler: 7b4039c4 [A01WMISmmCallback]
+FchSwSmiRecord at 0048f018 - 05 - handler: 7b42fad8 [SmmSvcCallback]
+FchSwSmiRecord at 0048f098 - 04 - handler: 7b42f9d0 [SmmSvcCallback]
+FchSwSmiRecord at 0048f118 - 03 - handler: 7b42f8f8 [SmmSvcCallback]
+FchSwSmiRecord at 0048f518 - c5 - handler: 7b481df8 [A01SmmServiceBody]
+FchSwSmiRecord at 0048f598 - c9 - handler: 7b481510 [A01SmmServiceBody]
+FchSwSmiRecord at 0048f618 - c8 - handler: 7b4814e0 [A01SmmServiceBody]
+FchSwSmiRecord at 0048f698 - 04 - handler: 7b4814cc [A01SmmServiceBody]
+FchSwSmiRecord at 004b2618 - 03 - handler: 7b49d54c [HddPassword]
+FchSwSmiRecord at 004bac98 - 9d - handler: 7b4bcf30 [AodSmm]
+FchSwSmiRecord at 004dc398 - 03 - handler: 7b4c8c8c [AmdCcxZen3Smm]
+FchSwSmiRecord at 004dc418 - ea - handler: 7b4c8b78 [AmdCcxZen3Smm]
+FchSwSmiRecord at 004dc498 - ee - handler: 7b4c8898 [AmdCcxZen3Smm]
+FchSwSmiRecord at 004dcf98 - dd - handler: 7b4deb04 [AmdPspSmmV2]
+FchSwSmiRecord at 004e8198 - 03 - handler: 7b4dea88 [AmdPspSmmV2]
+FchSwSmiRecord at 004e8a18 - fb - handler: 7b4eb134 [SmmPlatform]
+FchSwSmiRecord at 004e8a98 - 05 - handler: 7b4eb124 [SmmPlatform]
+FchSwSmiRecord at 004e8b18 - 05 - handler: 7b4eb114 [SmmPlatform]
+FchSwSmiRecord at 004e8b98 - 05 - handler: 7b4eaf04 [SmmPlatform]
+FchSwSmiRecord at 004f1018 - 05 - handler: 7b4eade0 [SmmPlatform]
+FchSwSmiRecord at 004f1098 - 04 - handler: 7b4eacbc [SmmPlatform]
+FchSwSmiRecord at 004f1118 - 03 - handler: 7b4eaca4 [SmmPlatform]
+FchSwSmiRecord at 004f1198 - 03 - handler: 7b4eab38 [SmmPlatform]
+FchSwSmiRecord at 004f1518 - ef - handler: 7b4fbea8 [IhisiServicesSmm]
+FchSwSmiRecord at 00517818 - 04 - handler: 7b50994c [CommonSmiCallBackSmm]
+FchSwSmiRecord at 00517a18 - da - handler: 7b511ac4 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517a98 - d9 - handler: 7b511ab4 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517b18 - db - handler: 7b511aa4 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517b98 - e3 - handler: 7b5119c8 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517c18 - a1 - handler: 7b511910 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517c98 - a0 - handler: 7b511830 [AcpiCallbacksSmm]
+FchSwSmiRecord at 00517f18 - 48 - handler: 7b519a78 [Tcg2Smm]
+FchSwSmiRecord at 00517f98 - 50 - handler: 7b5199a4 [Tcg2Smm]
+FchSwSmiRecord at 0058d518 - 73 - handler: 7b57c76c [AcerDeviceEnabling]
+FchSwSmiRecord at 0058db18 - 47 - handler: 7b585720 [PnpSmm]
+FchSwSmiRecord at 005d9218 - fd - handler: 7b5bafb4 [UsbCoreDxe]
+FchSwSmiRecord at 005d9618 - 03 - handler: 7b5cb614 [NvmExpressDxe]
+FchSwSmiRecord at 005d9d98 - 03 - handler: 7b5dc854 [AhciBusDxe]
+FchSwSmiRecord at 00603818 - d6 - handler: 7b5fac20 [FchKTSataD3ColdSmm]
+FchSwSmiRecord at 00603898 - d5 - handler: 7b5fab24 [FchKTSataD3ColdSmm]
+FchSwSmiRecord at 00603f18 - 05 - handler: 7b606e6c [FchKeithSmmInit]
+FchSwSmiRecord at 00603f98 - 04 - handler: 7b606e18 [FchKeithSmmInit]
+FchSwSmiRecord at 0061b018 - 03 - handler: 7b606d60 [FchKeithSmmInit]
+FchSwSmiRecord at 0061b218 - e0 - handler: 7b6071fc [FchKeithSmmInit]
+FchSwSmiRecord at 0061b298 - a1 - handler: 7b607118 [FchKeithSmmInit]
+FchSwSmiRecord at 0061b318 - a0 - handler: 7b606f98 [FchKeithSmmInit]
+FchSwSmiRecord at 0061b398 - eb - handler: 7b6071fc [FchKeithSmmInit]
+FchSwSmiRecord at 0061b618 - eb - handler: 7b606f44 [FchKeithSmmInit]
+FchSwSmiRecord at 0061b798 - ea - handler: 7b606e90 [FchKeithSmmInit]
+FchSwSmiRecord at 0061bb98 - cf - handler: 7b614ca0 [AmdCpmOemSmm]
+FchSwSmiRecord at 0061bc98 - 05 - handler: 7b614b24 [AmdCpmOemSmm]
+FchSwSmiRecord at 0061bd18 - 04 - handler: 7b614b24 [AmdCpmOemSmm]
+FchSwSmiRecord at 0061bd98 - 03 - handler: 7b6149e0 [AmdCpmOemSmm]
+FchSwSmiRecord at 0063a018 - e3 - handler: 7b61dc54 [AmdCpmOemSmm]
+FchSwSmiRecord at 0063a218 - de - handler: 7b627964 [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 0063a298 - ed - handler: 7b6278a0 [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 0063a318 - e3 - handler: 7b62777c [AmdCpmDisplayFeatureSmm]
+FchSwSmiRecord at 0063a598 - 01 - handler: 7b62f6bc [PiSmmCommunicationSmm]
+FchSwSmiRecord at 0063a918 - 69 - handler: 7b635012 []
+FchSwSmiRecord at 0063ad98 - ea - handler: 7b63d440 [AmdPspRomArmor3Smm]
